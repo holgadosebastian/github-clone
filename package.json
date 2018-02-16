@@ -38,6 +38,7 @@
   },
   "scripts": {
     "test": "karma start test\\karma.conf.js",
-    "dev": "gulp serve"
+    "dev": "gulp serve",
+    "build": "gulp build"
   }
 }
