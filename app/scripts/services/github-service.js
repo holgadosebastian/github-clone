@@ -8,7 +8,7 @@ angular.module('gitCloneApp')
   .service('GithubSrv', function ($http) {
 
       this.getIssues = function getIssues ( aProjectId ) {
-        var url = githubEndPoint + '/' + projectOwner + '/' + projectName + '/issues';
+        var url = githubEndPoint + '/repos/' + projectOwner + '/' + projectName + '/issues';
 
         return $http.get( url );
       };
